@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = Math.random(0, 1000)*1000;
+        var b = a.toFixed(0);
+        document.write("Randomly generated number: " + b);
+        var z = b.toString();
+    </script>
+    <br>
+    <script>
+         if(z.length==1){
+            document.write("Breakdown: 0, 0, "+z);
+        }
+    </script>
+    <script>
+        if (z.length==2){
+            var d = z.slice(0, 1);
+            var e = d*10;
+            var f = z.slice(1,2);
+            document.write("Breakdown: 0, " + e +", " + f);
+        }
+    </script>
+    <script>
+        if(z.length==3){
+            var g = z.slice(0,1);
+            var h = g*100;
+            var i = z.slice(1,2);
+            var j = i*10;
+            var k = z.slice(2,3);
+            document.write("Breakdown: "+h+", " +j+", " +k);
+        }
+    </script>
+    <br>
+    <script>
+        var d = new Date();
+        document.write("Date printed: " + d);
+    </script>
+</body>
+</html>
